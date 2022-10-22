@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div style="text-align:center"> 
+    <button onclick="playPause()">播放/暂停</button> 
+    <br> 
+    <video id="video1">
+      <source src="Pq5p8tktiwq_xYfE.mp4" type="video/mp4">
+      您的浏览器不支持 HTML5 video 标签。
+    </video>
+  </div> 
+</body>
+<script> 
+  var myVideo=document.getElementById("video1"); 
+  
+  function playPause()
+  { 
+    if (myVideo.paused) 
+      myVideo.play(); 
+    else 
+      myVideo.pause(); 
+  } 
+</script>
+</html>
